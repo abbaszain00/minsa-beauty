@@ -10,27 +10,20 @@ export default function Home() {
       <section className="relative h-screen flex items-center">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/assets/images/hero-image1.jpg"
-            alt="Minsa Beauty & Aesthetics"
+            src="/assets/images/hero.jpg"
+            alt="Minsa Beauty & Aesthetics - Glowing Skin"
             fill
             className="object-cover"
             priority
           />
-          <div className="absolute inset-0 bg-black/50"></div>
+          <div className="absolute inset-0 bg-black/40"></div>
         </div>
 
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-3xl text-white">
-            <div className="mb-8">
-              <Image
-                src="/assets/images/minsa-text.png"
-                alt="Minsa Beauty & Aesthetics"
-                width={700}
-                height={175}
-                className="w-full max-w-2xl"
-                priority
-              />
-            </div>
+            <h1 className="text-7xl font-bold mb-6 leading-tight">
+              Minsa Beauty & Aesthetics
+            </h1>
             {/* <p className="text-xl mb-8 text-stone-200 max-w-2xl font-light">
               Professional aesthetic treatments by certified practitioners.
               Specializing in advanced skin treatments, anti-aging procedures,
@@ -82,7 +75,7 @@ export default function Home() {
                   Botox and anti-wrinkle treatments to smooth fine lines and
                   prevent aging signs.
                 </p>
-                <button className="text-stone-800 font-semibold hover:text-stone-600">
+                <button className="text-stone-800 font-medium hover:text-stone-600 transition">
                   Learn More →
                 </button>
               </div>
@@ -92,7 +85,7 @@ export default function Home() {
             <div className="group bg-stone-50 rounded-2xl overflow-hidden hover:shadow-xl transition">
               <div className="relative h-80">
                 <Image
-                  src="/assets/images/about-image.jpg"
+                  src="/assets/images/treatments-1.jpg"
                   alt="Dermal Fillers"
                   fill
                   className="object-cover group-hover:scale-105 transition duration-500"
@@ -103,10 +96,10 @@ export default function Home() {
                   Dermal Fillers
                 </h3>
                 <p className="text-stone-600 mb-4 font-light">
-                  Premium polynucleotide fillers including Profhilo, Seventy
-                  Hyal 2000, and more.
+                  Premium fillers including Profhilo, Seventy Hyal for natural
+                  volume and hydration.
                 </p>
-                <button className="text-stone-800 font-semibold hover:text-stone-600">
+                <button className="text-stone-800 font-medium hover:text-stone-600 transition">
                   Learn More →
                 </button>
               </div>
@@ -116,7 +109,7 @@ export default function Home() {
             <div className="group bg-stone-50 rounded-2xl overflow-hidden hover:shadow-xl transition">
               <div className="relative h-80">
                 <Image
-                  src="/assets/images/oil-massage.jpg"
+                  src="/assets/images/treatments-2.jpg"
                   alt="Skin Boosters"
                   fill
                   className="object-cover group-hover:scale-105 transition duration-500"
@@ -127,10 +120,10 @@ export default function Home() {
                   Skin Boosters
                 </h3>
                 <p className="text-stone-600 mb-4 font-light">
-                  Advanced skin boosters including Lumi Eyes, Prp, and Meso
-                  therapy treatments.
+                  Lumi Eyes, PRP, and mesotherapy for deep hydration and radiant
+                  skin.
                 </p>
-                <button className="text-stone-800 font-semibold hover:text-stone-600">
+                <button className="text-stone-800 font-medium hover:text-stone-600 transition">
                   Learn More →
                 </button>
               </div>
@@ -140,7 +133,7 @@ export default function Home() {
             <div className="group bg-stone-50 rounded-2xl overflow-hidden hover:shadow-xl transition">
               <div className="relative h-80">
                 <Image
-                  src="/assets/images/reflexology.jpg"
+                  src="/assets/images/treatments-3.jpg"
                   alt="Microblading"
                   fill
                   className="object-cover group-hover:scale-105 transition duration-500"
@@ -151,9 +144,9 @@ export default function Home() {
                   Microblading
                 </h3>
                 <p className="text-stone-600 mb-4 font-light">
-                  Semi-permanent eyebrow enhancement for naturally fuller brows.
+                  Semi-permanent eyebrow enhancement for natural, defined brows.
                 </p>
-                <button className="text-stone-800 font-semibold hover:text-stone-600">
+                <button className="text-stone-800 font-medium hover:text-stone-600 transition">
                   Learn More →
                 </button>
               </div>
@@ -163,8 +156,8 @@ export default function Home() {
             <div className="group bg-stone-50 rounded-2xl overflow-hidden hover:shadow-xl transition">
               <div className="relative h-80">
                 <Image
-                  src="/assets/images/facials.jpg"
-                  alt="Nucleofill"
+                  src="/assets/images/treatments-4.jpg"
+                  alt="Nucleofill Treatment"
                   fill
                   className="object-cover group-hover:scale-105 transition duration-500"
                 />
@@ -174,9 +167,10 @@ export default function Home() {
                   Nucleofill
                 </h3>
                 <p className="text-stone-600 mb-4 font-light">
-                  Advanced bio-revitalization treatment for skin rejuvenation.
+                  Advanced polynucleotide bio-revitalization for skin
+                  regeneration.
                 </p>
-                <button className="text-stone-800 font-semibold hover:text-stone-600">
+                <button className="text-stone-800 font-medium hover:text-stone-600 transition">
                   Learn More →
                 </button>
               </div>
@@ -186,7 +180,7 @@ export default function Home() {
             <div className="group bg-stone-50 rounded-2xl overflow-hidden hover:shadow-xl transition">
               <div className="relative h-80">
                 <Image
-                  src="/assets/images/reflexology.jpg"
+                  src="/assets/images/treatments-5.jpg"
                   alt="Gel Manicures"
                   fill
                   className="object-cover group-hover:scale-105 transition duration-500"
@@ -197,9 +191,10 @@ export default function Home() {
                   Gel Manicures
                 </h3>
                 <p className="text-stone-600 mb-4 font-light">
-                  Professional gel manicures and nail care treatments.
+                  Long-lasting, chip-free gel manicures in a relaxing
+                  environment.
                 </p>
-                <button className="text-stone-800 font-semibold hover:text-stone-600">
+                <button className="text-stone-800 font-medium hover:text-stone-600 transition">
                   Learn More →
                 </button>
               </div>
@@ -209,74 +204,56 @@ export default function Home() {
       </section>
 
       {/* About Section */}
-      <section className="py-24 bg-stone-100">
+      <section className="py-24 bg-stone-50">
         <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-2 gap-16 items-center">
-            <div className="relative h-[600px] rounded-2xl overflow-hidden">
-              <Image
-                src="/assets/images/about-image.jpg"
-                alt="About Minsa Beauty & Aesthetics"
-                fill
-                className="object-cover"
-              />
-            </div>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
               <p className="text-stone-600 text-lg mb-2 font-light">About Us</p>
               <h2 className="text-5xl font-bold mb-6 text-stone-900">
-                Professional Aesthetic Care
+                Expert Aesthetic Care
               </h2>
-              <p className="text-lg text-stone-700 mb-6 font-light">
-                Minsa Beauty & Aesthetics is your trusted destination for
-                advanced aesthetic treatments in the heart of London. Our
-                qualified aesthetic practitioner and beauty therapist specialize
-                in delivering safe, effective treatments tailored to your
-                individual needs.
+              <p className="text-xl text-stone-600 mb-8 font-light leading-relaxed">
+                Minsa Beauty & Aesthetics offers premium aesthetic treatments in
+                the heart of London. Our certified practitioners specialize in
+                advanced anti-aging procedures and beauty therapies.
               </p>
-              <p className="text-lg text-stone-700 mb-8 font-light">
-                We use only premium products and the latest techniques to ensure
-                you receive the highest standard of care in a professional,
-                welcoming environment.
-              </p>
-
               <div className="space-y-4 mb-8">
-                <div className="flex items-start">
-                  <span className="text-stone-700 text-2xl mr-4 mt-1">✓</span>
-                  <div>
-                    <p className="text-lg font-semibold text-stone-900">
-                      Certified Aesthetic Practitioner
-                    </p>
-                    <p className="text-stone-600 font-light">
-                      Qualified professional with extensive training
-                    </p>
-                  </div>
+                <div className="flex items-start gap-3">
+                  <span className="text-stone-800 text-2xl">✓</span>
+                  <p className="text-stone-700">
+                    Certified aesthetic practitioners with years of experience
+                  </p>
                 </div>
-                <div className="flex items-start">
-                  <span className="text-stone-700 text-2xl mr-4 mt-1">✓</span>
-                  <div>
-                    <p className="text-lg font-semibold text-stone-900">
-                      Premium Products
-                    </p>
-                    <p className="text-stone-600 font-light">
-                      Profhilo, Seventy Hyal, Nucleofill & more
-                    </p>
-                  </div>
+                <div className="flex items-start gap-3">
+                  <span className="text-stone-800 text-2xl">✓</span>
+                  <p className="text-stone-700">
+                    Premium products: Profhilo, Seventy Hyal, Nucleofill
+                  </p>
                 </div>
-                <div className="flex items-start">
-                  <span className="text-stone-700 text-2xl mr-4 mt-1">✓</span>
-                  <div>
-                    <p className="text-lg font-semibold text-stone-900">
-                      Personalized Treatments
-                    </p>
-                    <p className="text-stone-600 font-light">
-                      Tailored to your unique aesthetic goals
-                    </p>
-                  </div>
+                <div className="flex items-start gap-3">
+                  <span className="text-stone-800 text-2xl">✓</span>
+                  <p className="text-stone-700">
+                    Personalized treatment plans for natural results
+                  </p>
+                </div>
+                <div className="flex items-start gap-3">
+                  <span className="text-stone-800 text-2xl">✓</span>
+                  <p className="text-stone-700">
+                    Central London location in the financial district
+                  </p>
                 </div>
               </div>
-
               <button className="bg-stone-800 text-white px-8 py-4 rounded-full text-lg hover:bg-stone-900 transition">
-                Book Consultation
+                Learn More About Us
               </button>
+            </div>
+            <div className="relative h-96 lg:h-full">
+              <Image
+                src="/assets/images/about-image1.jpg"
+                alt="About Minsa Beauty & Aesthetics"
+                fill
+                className="object-cover rounded-2xl"
+              />
             </div>
           </div>
         </div>
@@ -284,23 +261,21 @@ export default function Home() {
 
       {/* Location Section */}
       <section className="py-24 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <p className="text-stone-600 text-lg mb-2 font-light">Visit Us</p>
-            <h2 className="text-5xl font-bold mb-6 text-stone-900">
-              Central London Location
-            </h2>
-            <p className="text-xl text-stone-700 mb-8 font-light">
-              35 New Broad Street, London, EC2M 1NH
-            </p>
-            <div className="flex flex-col md:flex-row gap-6 justify-center items-center">
-              <button className="bg-stone-800 text-white px-8 py-4 rounded-full text-lg hover:bg-stone-900 transition">
-                Get Directions
-              </button>
-              <button className="border-2 border-stone-800 text-stone-800 px-8 py-4 rounded-full text-lg hover:bg-stone-800 hover:text-white transition">
-                Contact Us
-              </button>
-            </div>
+        <div className="container mx-auto px-4 text-center">
+          <p className="text-stone-600 text-lg mb-2 font-light">Visit Us</p>
+          <h2 className="text-5xl font-bold mb-6 text-stone-900">
+            Our Location
+          </h2>
+          <p className="text-2xl text-stone-700 mb-8 font-light">
+            35 New Broad Street, London, EC2M 1NH
+          </p>
+          <div className="flex gap-4 justify-center">
+            <button className="bg-stone-800 text-white px-8 py-4 rounded-full text-lg hover:bg-stone-900 transition">
+              Get Directions
+            </button>
+            <button className="border-2 border-stone-800 text-stone-800 px-8 py-4 rounded-full text-lg hover:bg-stone-800 hover:text-white transition">
+              Contact Us
+            </button>
           </div>
         </div>
       </section>
@@ -309,23 +284,22 @@ export default function Home() {
       <section className="relative py-32">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/assets/images/cta-bg.jpg"
+            src="/assets/images/cta-image.jpg"
             alt="Book Your Treatment"
             fill
             className="object-cover"
           />
           <div className="absolute inset-0 bg-black/60"></div>
         </div>
-
-        <div className="container mx-auto px-4 relative z-10 text-center text-white">
-          <h2 className="text-5xl font-bold mb-6">
-            Ready to Enhance Your Natural Beauty?
+        <div className="container mx-auto px-4 relative z-10 text-center">
+          <h2 className="text-5xl font-bold mb-6 text-white">
+            Ready to Transform Your Look?
           </h2>
-          <p className="text-xl mb-10 max-w-2xl mx-auto font-light">
+          <p className="text-xl text-stone-200 mb-8 max-w-2xl mx-auto font-light">
             Book your consultation today and discover personalized aesthetic
-            treatments designed just for you
+            treatments tailored to your needs.
           </p>
-          <button className="bg-stone-800 text-white px-10 py-5 rounded-full text-lg hover:bg-stone-900 transition shadow-lg border border-stone-600">
+          <button className="bg-white text-stone-900 px-10 py-5 rounded-full text-lg font-medium hover:bg-stone-100 transition">
             Book Your Appointment
           </button>
         </div>
@@ -334,22 +308,22 @@ export default function Home() {
       {/* Footer */}
       <footer className="bg-stone-900 text-white py-16">
         <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-3 gap-12 mb-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
             <div>
-              <div className="w-20 h-20 relative mb-4">
+              <div className="w-32 h-32 relative mb-4">
                 <Image
-                  src="/assets/images/minsa-logo.png"
+                  src="/assets/images/minsa-bg.png"
                   alt="Minsa Beauty & Aesthetics"
                   fill
                   className="object-contain brightness-0 invert"
                 />
               </div>
               <p className="text-stone-400 font-light">
-                Professional aesthetic treatments in Central London
+                Premium aesthetic treatments in Central London
               </p>
             </div>
             <div>
-              <h4 className="text-lg font-semibold mb-4">Location</h4>
+              <h3 className="text-xl font-bold mb-4">Location</h3>
               <p className="text-stone-400 font-light">
                 35 New Broad Street
                 <br />
@@ -359,16 +333,14 @@ export default function Home() {
               </p>
             </div>
             <div>
-              <h4 className="text-lg font-semibold mb-4">Follow Us</h4>
+              <h3 className="text-xl font-bold mb-4">Follow Us</h3>
               <p className="text-stone-400 font-light">
-                @minsabeautyandaesthetics
+                Instagram: @minsabeautyandaesthetics
               </p>
             </div>
           </div>
-          <div className="border-t border-stone-800 pt-8 text-center text-stone-500">
-            <p className="font-light">
-              © 2025 Minsa Beauty & Aesthetics. All rights reserved.
-            </p>
+          <div className="border-t border-stone-800 mt-12 pt-8 text-center text-stone-500 font-light">
+            <p>© 2025 Minsa Beauty & Aesthetics. All rights reserved.</p>
           </div>
         </div>
       </footer>

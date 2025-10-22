@@ -103,7 +103,7 @@ export default function Navbar() {
         {/* Book Appointment Button */}
         <Link
           href="/booking"
-          className="bg-white text-primary px-7 py-3 rounded-full hover:bg-gray transition text-sm font-medium tracking-wide font-p22-mackinac"
+          className="bg-black text-primary px-7 py-3 rounded-full hover:bg-gray transition text-sm font-medium tracking-wide font-p22-mackinac"
         >
           BOOK NOW
         </Link>
