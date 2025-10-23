@@ -2,27 +2,27 @@
 
 /* P22 Mackinac Font - From Emberis Template */
 @font-face {
-  font-family: 'P22 Mackinac';
-  src: url('/assets/fonts/p22mackinac-book.woff2') format('woff2'),
-       url('/assets/fonts/p22mackinac-book.woff') format('woff');
+  font-family: "P22 Mackinac";
+  src: url("/assets/fonts/p22mackinac-book.woff2") format("woff2"),
+    url("/assets/fonts/p22mackinac-book.woff") format("woff");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'P22 Mackinac';
-  src: url('/assets/fonts/p22mackinac-medium.woff2') format('woff2'),
-       url('/assets/fonts/p22mackinac-medium.woff') format('woff');
+  font-family: "P22 Mackinac";
+  src: url("/assets/fonts/p22mackinac-medium.woff2") format("woff2"),
+    url("/assets/fonts/p22mackinac-medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'P22 Mackinac';
-  src: url('/assets/fonts/p22mackinac-bold.woff2') format('woff2'),
-       url('/assets/fonts/p22mackinac-bold.woff') format('woff');
+  font-family: "P22 Mackinac";
+  src: url("/assets/fonts/p22mackinac-bold.woff2") format("woff2"),
+    url("/assets/fonts/p22mackinac-bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -37,7 +37,7 @@
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: system-ui, sans-serif;
-  --font-mackinac: 'P22 Mackinac', serif;
+  --font-mackinac: "P22 Mackinac", serif;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -51,9 +51,4 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: system-ui, -apple-system, sans-serif;
-}
-
-/* Apply P22 Mackinac to all headings */
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'P22 Mackinac', serif;
 }

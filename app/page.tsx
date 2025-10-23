@@ -1,34 +1,40 @@
+// app/page.tsx
 import Navbar from "@/components/Navbar";
 import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-stone-50">
+    <div
+      className="min-h-screen bg-stone-50"
+      style={{ fontFamily: "var(--font-outfit)" }}
+    >
       <Navbar />
+      {/* rest of your page */}
 
+      {/* Everything below uses Outfit */}
       {/* Hero Section */}
       <section className="relative h-screen flex items-center">
         <div className="absolute inset-0 z-0">
           <Image
             src="/assets/images/hero.jpg"
-            alt="Minsa Beauty & Aesthetics - Glowing Skin"
+            alt="Minsa Beauty & Aesthetics"
             fill
             className="object-cover"
             priority
           />
-          <div className="absolute inset-0 bg-black/40"></div>
+          <div className="absolute inset-0 bg-black/50" />
         </div>
 
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-3xl text-white">
-            <h1 className="text-7xl font-bold mb-6 leading-tight">
+            <h1 className="text-7xl mb-6 leading-tight font-thin">
               Minsa Beauty & Aesthetics
             </h1>
             {/* <p className="text-xl mb-8 text-stone-200 max-w-2xl font-light">
-              Professional aesthetic treatments by certified practitioners.
-              Specializing in advanced skin treatments, anti-aging procedures,
-              and beauty therapy.
-            </p> */}
+                Professional aesthetic treatments by certified practitioners.
+                Specializing in advanced skin treatments, anti-aging procedures,
+                and beauty therapy.
+              </p> */}
             <div className="flex gap-4">
               <button className="bg-stone-800 text-white px-8 py-4 rounded-full text-lg hover:bg-stone-900 transition">
                 Book Appointment
@@ -289,7 +295,7 @@ export default function Home() {
             fill
             className="object-cover"
           />
-          <div className="absolute inset-0 bg-black/60"></div>
+          <div className="absolute inset-0 bg-black/60" />
         </div>
         <div className="container mx-auto px-4 relative z-10 text-center">
           <h2 className="text-5xl font-bold mb-6 text-white">
