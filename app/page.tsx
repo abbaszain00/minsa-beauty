@@ -34,9 +34,12 @@ export default function Home() {
               and beauty therapy.
             </p> */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-              <button className="bg-white text-stone-900 px-8 py-4 rounded-full text-lg font-medium hover:bg-stone-100 hover:scale-105 hover:shadow-lg transition-all duration-300">
-                Book Appointment
-              </button>
+              <a 
+  href="/booking"
+  className="bg-stone-800 text-white px-8 py-4 rounded-full text-lg hover:bg-stone-900 transition inline-block"
+>
+  Book Appointment
+</a>
               <button className="border-2 border-white text-white px-8 py-4 rounded-full text-lg font-medium hover:bg-white hover:text-stone-900 transition-all duration-300">
                 View Treatments
               </button>
@@ -402,9 +405,12 @@ export default function Home() {
             Book your consultation today and discover personalized aesthetic
             treatments tailored to your needs.
           </p>
-          <button className="bg-white text-stone-900 px-10 py-5 rounded-full text-lg font-medium hover:bg-stone-100 transition">
-            Book Your Appointment
-          </button>
+          <a 
+  href="/booking"
+  className="bg-stone-800 text-white px-8 py-4 rounded-full text-lg hover:bg-stone-900 transition inline-block"
+>
+  Book Appointment
+</a>
         </div>
       </section>
 
