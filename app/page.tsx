@@ -34,15 +34,18 @@ export default function Home() {
               and beauty therapy.
             </p> */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-              <a 
-  href="/booking"
-  className="bg-stone-800 text-white px-8 py-4 rounded-full text-lg hover:bg-stone-900 transition inline-block"
->
-  Book Appointment
-</a>
-              <button className="border-2 border-white text-white px-8 py-4 rounded-full text-lg font-medium hover:bg-white hover:text-stone-900 transition-all duration-300">
+              <a
+                href="/booking"
+                className="bg-stone-800 text-white px-8 py-4 rounded-full text-lg hover:bg-stone-900 transition inline-block"
+              >
+                Book Appointment
+              </a>
+              <a
+                href="/services"
+                className="border-2 border-white text-white px-8 py-4 rounded-full text-lg font-medium hover:bg-white hover:text-stone-900 transition-all duration-300"
+              >
                 View Treatments
-              </button>
+              </a>
             </div>
           </div>
         </div>
@@ -270,8 +273,12 @@ export default function Home() {
       <section className="py-24 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <p className="text-stone-600 text-lg mb-2 font-light">Client Reviews</p>
-            <h2 className="text-5xl font-bold mb-4 text-stone-900">What Our Clients Say</h2>
+            <p className="text-stone-600 text-lg mb-2 font-light">
+              Client Reviews
+            </p>
+            <h2 className="text-5xl font-bold mb-4 text-stone-900">
+              What Our Clients Say
+            </h2>
             <p className="text-xl text-stone-600 max-w-2xl mx-auto font-light">
               Real experiences from our valued clients
             </p>
@@ -282,13 +289,20 @@ export default function Home() {
             <div className="bg-stone-50 p-8 rounded-2xl">
               <div className="flex mb-4">
                 {[...Array(5)].map((_, i) => (
-                  <svg key={i} className="w-5 h-5 text-amber-400 fill-current" viewBox="0 0 20 20">
+                  <svg
+                    key={i}
+                    className="w-5 h-5 text-amber-400 fill-current"
+                    viewBox="0 0 20 20"
+                  >
                     <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
                   </svg>
                 ))}
               </div>
               <p className="text-stone-700 mb-6 italic font-light">
-                This is my second visit with Shazia and she gets better with every visit. My nails have never looked and felt good. She will go far and beyond to do the best service. Will definitely recommend and keep coming back.
+                This is my second visit with Shazia and she gets better with
+                every visit. My nails have never looked and felt good. She will
+                go far and beyond to do the best service. Will definitely
+                recommend and keep coming back.
               </p>
               <div className="flex items-center">
                 <div className="w-12 h-12 bg-stone-300 rounded-full flex items-center justify-center text-stone-700 font-semibold">
@@ -305,13 +319,20 @@ export default function Home() {
             <div className="bg-stone-50 p-8 rounded-2xl">
               <div className="flex mb-4">
                 {[...Array(5)].map((_, i) => (
-                  <svg key={i} className="w-5 h-5 text-amber-400 fill-current" viewBox="0 0 20 20">
+                  <svg
+                    key={i}
+                    className="w-5 h-5 text-amber-400 fill-current"
+                    viewBox="0 0 20 20"
+                  >
                     <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
                   </svg>
                 ))}
               </div>
               <p className="text-stone-700 mb-6 italic font-light">
-                Went to get my eyebrows threaded. I was asked how I&apos;d like them done and that&apos;s exactly how they turned out - rare to have such an experience. I felt Shazia really cared, 10/10 would go back again.
+                Went to get my eyebrows threaded. I was asked how I&apos;d like
+                them done and that&apos;s exactly how they turned out - rare to
+                have such an experience. I felt Shazia really cared, 10/10 would
+                go back again.
               </p>
               <div className="flex items-center">
                 <div className="w-12 h-12 bg-stone-300 rounded-full flex items-center justify-center text-stone-700 font-semibold">
@@ -328,13 +349,18 @@ export default function Home() {
             <div className="bg-stone-50 p-8 rounded-2xl">
               <div className="flex mb-4">
                 {[...Array(5)].map((_, i) => (
-                  <svg key={i} className="w-5 h-5 text-amber-400 fill-current" viewBox="0 0 20 20">
+                  <svg
+                    key={i}
+                    className="w-5 h-5 text-amber-400 fill-current"
+                    viewBox="0 0 20 20"
+                  >
                     <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
                   </svg>
                 ))}
               </div>
               <p className="text-stone-700 mb-6 italic font-light">
-                Been a few times at this place for different treatments and def will be back again. Good service and lovely beautician!
+                Been a few times at this place for different treatments and def
+                will be back again. Good service and lovely beautician!
               </p>
               <div className="flex items-center">
                 <div className="w-12 h-12 bg-stone-300 rounded-full flex items-center justify-center text-stone-700 font-semibold">
@@ -350,15 +376,25 @@ export default function Home() {
 
           {/* Google Reviews CTA */}
           <div className="text-center mt-12">
-            <a 
+            <a
               href="https://www.google.com/maps/search/Minsa+Beauty+%26+Aesthetics+35+New+Broad+Street+London"
-              target="_blank" 
+              target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center text-stone-800 font-semibold hover:text-stone-600 transition"
             >
               Read more reviews on Google
-              <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              <svg
+                className="w-5 h-5 ml-2"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M9 5l7 7-7 7"
+                />
               </svg>
             </a>
           </div>
@@ -405,12 +441,12 @@ export default function Home() {
             Book your consultation today and discover personalized aesthetic
             treatments tailored to your needs.
           </p>
-          <a 
-  href="/booking"
-  className="bg-stone-800 text-white px-8 py-4 rounded-full text-lg hover:bg-stone-900 transition inline-block"
->
-  Book Appointment
-</a>
+          <a
+            href="/booking"
+            className="bg-stone-800 text-white px-8 py-4 rounded-full text-lg hover:bg-stone-900 transition inline-block"
+          >
+            Book Appointment
+          </a>
         </div>
       </section>
 

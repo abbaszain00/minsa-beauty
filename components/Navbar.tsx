@@ -80,10 +80,10 @@ export default function Navbar() {
           </li>
           <li>
             <Link
-              href="/treatments"
+              href="/services"
               className="relative hover:text-gray transition font-medium group"
             >
-              TREATMENTS
+              SERVICES
               <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
             </Link>
           </li>
@@ -173,7 +173,7 @@ export default function Navbar() {
             </li>
             <li className="animate-slideIn" style={{ animationDelay: "150ms" }}>
               <Link
-                href="/treatments"
+                href="/services"
                 className="block hover:text-gray transition font-medium py-2"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
