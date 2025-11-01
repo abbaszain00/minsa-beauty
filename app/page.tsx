@@ -247,9 +247,9 @@ export default function Home() {
                   </p>
                 </div>
               </div>
-              <button className="bg-stone-800 text-white px-8 py-4 rounded-full text-lg hover:bg-stone-900 transition w-full sm:w-auto">
+              {/* <button className="bg-stone-800 text-white px-8 py-4 rounded-full text-lg hover:bg-stone-900 transition w-full sm:w-auto">
                 Learn More About Us
-              </button>
+              </button> */}
             </div>
             <div className="relative h-96 lg:h-full min-h-[400px]">
               <Image
@@ -285,7 +285,7 @@ export default function Home() {
                 ))}
               </div>
               <p className="text-stone-700 mb-6 italic font-light">
-                "This is my second visit with Shazia and she gets better with every visit. My nails have never looked and felt good. She will go far and beyond to do the best service. Will definitely recommend and keep coming back."
+                This is my second visit with Shazia and she gets better with every visit. My nails have never looked and felt good. She will go far and beyond to do the best service. Will definitely recommend and keep coming back.
               </p>
               <div className="flex items-center">
                 <div className="w-12 h-12 bg-stone-300 rounded-full flex items-center justify-center text-stone-700 font-semibold">
@@ -308,7 +308,7 @@ export default function Home() {
                 ))}
               </div>
               <p className="text-stone-700 mb-6 italic font-light">
-                "Went to get my eyebrows threaded. I was asked how I'd like them done and that's exactly how they turned out - rare to have such an experience. I felt Shazia really cared, 10/10 would go back again."
+                Went to get my eyebrows threaded. I was asked how I&apos;d like them done and that&apos;s exactly how they turned out - rare to have such an experience. I felt Shazia really cared, 10/10 would go back again.
               </p>
               <div className="flex items-center">
                 <div className="w-12 h-12 bg-stone-300 rounded-full flex items-center justify-center text-stone-700 font-semibold">
@@ -331,7 +331,7 @@ export default function Home() {
                 ))}
               </div>
               <p className="text-stone-700 mb-6 italic font-light">
-                "Been a few times at this place for different treatments and def will be back again. Good service and lovely beautician!"
+                Been a few times at this place for different treatments and def will be back again. Good service and lovely beautician!
               </p>
               <div className="flex items-center">
                 <div className="w-12 h-12 bg-stone-300 rounded-full flex items-center justify-center text-stone-700 font-semibold">
@@ -345,9 +345,7 @@ export default function Home() {
             </div>
           </div>
 
-
-        </div>
-         {/* Google Reviews CTA */}
+          {/* Google Reviews CTA */}
           <div className="text-center mt-12">
             <a 
               href="https://www.google.com/maps/search/Minsa+Beauty+%26+Aesthetics+35+New+Broad+Street+London"
@@ -361,6 +359,7 @@ export default function Home() {
               </svg>
             </a>
           </div>
+        </div>
       </section>
 
       {/* Location Section */}
