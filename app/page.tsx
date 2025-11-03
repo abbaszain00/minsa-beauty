@@ -55,11 +55,11 @@ export default function Home() {
       <section className="py-24 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <p className="text-stone-600 text-lg mb-2 font-light">
+            {/* <p className="text-stone-600 text-lg mb-2 font-light">
               Our Treatments
-            </p>
+            </p> */}
             <h2 className="text-4xl md:text-5xl font-bold mb-4 text-stone-900">
-              Aesthetic Services
+              Most Popular Treatments
             </h2>
             <p className="text-lg md:text-xl text-stone-600 max-w-2xl mx-auto font-light">
               Advanced aesthetic treatments delivered by qualified practitioners
@@ -453,7 +453,7 @@ export default function Home() {
       {/* Footer */}
       <footer className="bg-stone-900 text-white py-16">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-center md:text-left">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-12 text-center md:text-left">
             <div className="flex flex-col items-center md:items-start">
               <div className="w-32 h-32 relative mb-4">
                 <Image
@@ -476,6 +476,39 @@ export default function Home() {
                 <br />
                 United Kingdom
               </p>
+            </div>
+            <div>
+              <h3 className="text-xl font-bold mb-4">Opening Hours</h3>
+              <div className="space-y-2 text-stone-400 font-light">
+                <div className="flex justify-between md:justify-start">
+                  <span className="w-28">Monday</span>
+                  <span>11am–8pm</span>
+                </div>
+                <div className="flex justify-between md:justify-start">
+                  <span className="w-28">Tuesday</span>
+                  <span>11am–8pm</span>
+                </div>
+                <div className="flex justify-between md:justify-start">
+                  <span className="w-28">Wednesday</span>
+                  <span>11am–8pm</span>
+                </div>
+                <div className="flex justify-between md:justify-start">
+                  <span className="w-28">Thursday</span>
+                  <span>11am–8pm</span>
+                </div>
+                <div className="flex justify-between md:justify-start">
+                  <span className="w-28">Friday</span>
+                  <span>11am–8pm</span>
+                </div>
+                <div className="flex justify-between md:justify-start">
+                  <span className="w-28">Saturday</span>
+                  <span className="text-stone-500">Closed</span>
+                </div>
+                <div className="flex justify-between md:justify-start">
+                  <span className="w-28">Sunday</span>
+                  <span className="text-stone-500">Closed</span>
+                </div>
+              </div>
             </div>
             <div>
               <h3 className="text-xl font-bold mb-4">Follow Us</h3>
