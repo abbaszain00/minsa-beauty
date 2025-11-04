@@ -1,5 +1,6 @@
 // app/page.tsx
 import Navbar from "@/components/Navbar";
+import TestimonialCarousel from "@/components/TestimonialCarousel";
 import Image from "next/image";
 
 export default function Home() {
@@ -284,95 +285,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            {/* Testimonial 1 - Lyuba */}
-            <div className="bg-stone-50 p-8 rounded-2xl">
-              <div className="flex mb-4">
-                {[...Array(5)].map((_, i) => (
-                  <svg
-                    key={i}
-                    className="w-5 h-5 text-amber-400 fill-current"
-                    viewBox="0 0 20 20"
-                  >
-                    <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
-                  </svg>
-                ))}
-              </div>
-              <p className="text-stone-700 mb-6 italic font-light">
-                This is my second visit with Shazia and she gets better with
-                every visit. My nails have never looked and felt good. She will
-                go far and beyond to do the best service. Will definitely
-                recommend and keep coming back.
-              </p>
-              <div className="flex items-center">
-                <div className="w-12 h-12 bg-stone-300 rounded-full flex items-center justify-center text-stone-700 font-semibold">
-                  LM
-                </div>
-                <div className="ml-4">
-                  <p className="font-semibold text-stone-900">Lyuba M.</p>
-                  <p className="text-stone-600 text-sm">Google Review</p>
-                </div>
-              </div>
-            </div>
-
-            {/* Testimonial 2 - Monal */}
-            <div className="bg-stone-50 p-8 rounded-2xl">
-              <div className="flex mb-4">
-                {[...Array(5)].map((_, i) => (
-                  <svg
-                    key={i}
-                    className="w-5 h-5 text-amber-400 fill-current"
-                    viewBox="0 0 20 20"
-                  >
-                    <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
-                  </svg>
-                ))}
-              </div>
-              <p className="text-stone-700 mb-6 italic font-light">
-                Went to get my eyebrows threaded. I was asked how I&apos;d like
-                them done and that&apos;s exactly how they turned out - rare to
-                have such an experience. I felt Shazia really cared, 10/10 would
-                go back again.
-              </p>
-              <div className="flex items-center">
-                <div className="w-12 h-12 bg-stone-300 rounded-full flex items-center justify-center text-stone-700 font-semibold">
-                  MS
-                </div>
-                <div className="ml-4">
-                  <p className="font-semibold text-stone-900">Monal S.</p>
-                  <p className="text-stone-600 text-sm">Google Review</p>
-                </div>
-              </div>
-            </div>
-
-            {/* Testimonial 3 - Kirtley */}
-            <div className="bg-stone-50 p-8 rounded-2xl">
-              <div className="flex mb-4">
-                {[...Array(5)].map((_, i) => (
-                  <svg
-                    key={i}
-                    className="w-5 h-5 text-amber-400 fill-current"
-                    viewBox="0 0 20 20"
-                  >
-                    <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
-                  </svg>
-                ))}
-              </div>
-              <p className="text-stone-700 mb-6 italic font-light">
-                Been a few times at this place for different treatments and def
-                will be back again. Good service and lovely beautician!
-              </p>
-              <div className="flex items-center">
-                <div className="w-12 h-12 bg-stone-300 rounded-full flex items-center justify-center text-stone-700 font-semibold">
-                  KO
-                </div>
-                <div className="ml-4">
-                  <p className="font-semibold text-stone-900">Kirtley O.</p>
-                  <p className="text-stone-600 text-sm">Google Review</p>
-                </div>
-              </div>
-            </div>
-          </div>
+          <TestimonialCarousel />
 
           {/* Google Reviews CTA */}
           <div className="text-center mt-12">
