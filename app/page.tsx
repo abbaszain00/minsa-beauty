@@ -1,6 +1,7 @@
 // app/page.tsx
 import Navbar from "@/components/Navbar";
 import TestimonialCarousel from "@/components/TestimonialCarousel";
+import FloatingWhatsApp from "@/components/FloatingWhatsApp";
 import Image from "next/image";
 
 export default function Home() {
@@ -315,7 +316,7 @@ export default function Home() {
       </section>
 
       {/* Location Section */}
-      <section className="py-24 bg-white">
+      <section className="py-24 bg-stone-50">
         <div className="container mx-auto px-4 text-center">
           <p className="text-stone-600 text-lg mb-2 font-light">Visit Us</p>
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-stone-900">
@@ -325,12 +326,22 @@ export default function Home() {
             35 New Broad Street, London, EC2M 1NH
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-stone-800 text-white px-8 py-4 rounded-full text-lg hover:bg-stone-900 transition">
+            <a
+              href="https://www.google.com/maps/dir/?api=1&destination=35+New+Broad+Street,+London,+EC2M+1NH"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-stone-800 text-white px-8 py-4 rounded-full text-lg hover:bg-stone-900 transition"
+            >
               Get Directions
-            </button>
-            <button className="border-2 border-stone-800 text-stone-800 px-8 py-4 rounded-full text-lg hover:bg-stone-800 hover:text-white transition">
+            </a>
+            <a
+              href="https://wa.me/447969488545"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="border-2 border-stone-800 text-stone-800 px-8 py-4 rounded-full text-lg hover:bg-stone-800 hover:text-white transition"
+            >
               Contact Us
-            </button>
+            </a>
           </div>
         </div>
       </section>
@@ -447,6 +458,9 @@ export default function Home() {
           </div>
         </div>
       </footer>
+
+      {/* Floating WhatsApp Button */}
+      <FloatingWhatsApp />
     </div>
   );
 }

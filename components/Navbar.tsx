@@ -96,15 +96,6 @@ export default function Navbar() {
               <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
             </Link>
           </li>
-          <li>
-            <Link
-              href="/contact"
-              className="relative hover:text-gray transition font-medium group"
-            >
-              CONTACT
-              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
-            </Link>
-          </li>
         </ul>
 
         {/* Desktop Book Now Button */}
@@ -187,15 +178,6 @@ export default function Navbar() {
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 GALLERY
-              </Link>
-            </li>
-            <li className="animate-slideIn" style={{ animationDelay: "250ms" }}>
-              <Link
-                href="/contact"
-                className="block hover:text-gray transition font-medium py-2"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                CONTACT
               </Link>
             </li>
           </ul>
