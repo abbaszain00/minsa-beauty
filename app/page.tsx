@@ -222,7 +222,7 @@ export default function Home() {
             <div>
               <p className="text-stone-600 text-lg mb-2 font-light">About Us</p>
               <h2 className="text-4xl md:text-5xl font-bold mb-6 text-stone-900">
-                Expert Aesthetic Care
+                Our Liverpool St. Clinic
               </h2>
               <p className="text-lg md:text-xl text-stone-600 mb-8 font-light leading-relaxed">
                 Minsa Beauty & Aesthetics offers premium aesthetic treatments in
@@ -261,8 +261,8 @@ export default function Home() {
             </div>
             <div className="relative h-96 lg:h-full min-h-[400px]">
               <Image
-                src="/assets/images/about-image1.jpg"
-                alt="About Minsa Beauty & Aesthetics"
+                src="/assets/images/london-cityscape.jpg"
+                alt="Liverpool Street London - Financial District"
                 fill
                 className="object-cover rounded-2xl"
               />
@@ -463,4 +463,4 @@ export default function Home() {
       <FloatingWhatsApp />
     </div>
   );
-}
+} 

@@ -19,4 +19,4 @@ export default function FloatingWhatsApp() {
       </svg>
     </a>
   );
-}
+} 
