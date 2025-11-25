@@ -5,14 +5,17 @@ import Image from "next/image";
 export default function BrandCarousel() {
   // Array of brand logos with their paths
   const brands = [
-    { name: "Profhilo", logo: "/assets/images/brands/profhilo.png" },
-    { name: "Seventy Hyal", logo: "/assets/images/brands/seventy-hyal.png" },
-    { name: "Nucleofill", logo: "/assets/images/brands/nucleofill.png" },
-    { name: "Hydrafacial", logo: "/assets/images/brands/hydrafacial.png" },
-    { name: "Lumi Eyes", logo: "/assets/images/brands/lumi-eyes.png" },
-    { name: "Botox", logo: "/assets/images/brands/botox.png" },
-    { name: "PRP", logo: "/assets/images/brands/prp.png" },
-    { name: "Mesotherapy", logo: "/assets/images/brands/mesotherapy.png" },
+{ name: "Dermalogica", logo: "/assets/brands/dermalogica.png" },    
+{ name: "Mesoestetic", logo: "/assets/brands/mesoestetic.png" },
+    { name: "Profhilo", logo: "/assets/brands/profhilo.png" },
+    { name: "Nucleofill", logo: "/assets/brands/nucleofill.png" },
+    { name: "Seventy Hyal", logo: "/assets/brands/seventyhyal.png" },
+    { name: "Ejal 40", logo: "/assets/brands/ejal40.png" },
+    { name: "Revolax", logo: "/assets/brands/revolax.png" },
+    { name: "Lumi Eyes", logo: "/assets/brands/lumi.png" },
+    { name: "Dermalax", logo: "/assets/brands/dermalax.png" },
+    { name: "Juvederm", logo: "/assets/brands/juvederm.webp" },
+    { name: "Fillmed", logo: "/assets/brands/filmed.png" },
   ];
 
   return (
@@ -37,8 +40,8 @@ export default function BrandCarousel() {
           {brands.map((brand, index) => (
             <div
               key={`brand-1-${index}`}
-              className="flex-shrink-0 mx-8 px-8 py-6 bg-white rounded-2xl shadow-sm flex items-center justify-center"
-              style={{ width: "200px", height: "120px" }}
+              className="flex-shrink-0 mx-8 flex items-center justify-center"
+              style={{ width: "250px", height: "150px" }}
             >
               <div className="relative w-full h-full">
                 <Image
@@ -46,17 +49,18 @@ export default function BrandCarousel() {
                   alt={brand.name}
                   fill
                   className="object-contain"
-                  sizes="200px"
+                  sizes="250px"
                 />
               </div>
             </div>
           ))}
+
           {/* Duplicate set for seamless loop */}
           {brands.map((brand, index) => (
             <div
               key={`brand-2-${index}`}
-              className="flex-shrink-0 mx-8 px-8 py-6 bg-white rounded-2xl shadow-sm flex items-center justify-center"
-              style={{ width: "200px", height: "120px" }}
+              className="flex-shrink-0 mx-8 flex items-center justify-center"
+              style={{ width: "250px", height: "150px" }}
             >
               <div className="relative w-full h-full">
                 <Image
@@ -64,7 +68,7 @@ export default function BrandCarousel() {
                   alt={brand.name}
                   fill
                   className="object-contain"
-                  sizes="200px"
+                  sizes="250px"
                 />
               </div>
             </div>
@@ -78,14 +82,13 @@ export default function BrandCarousel() {
             transform: translateX(0);
           }
           100% {
-            transform: translateX(-50%);
+            transform: translateX(calc(-100% / 2));
           }
         }
-
         .animate-scroll {
           animation: scroll 40s linear infinite;
+          width: fit-content;
         }
-
         .animate-scroll:hover {
           animation-play-state: paused;
         }
