@@ -99,21 +99,25 @@ export default function Navbar() {
         </ul>
 
         {/* Desktop Book Now Button */}
-        <Link
-          href="/booking"
+        <a
+          href="https://www.treatwell.co.uk/place/minsa-beauty-and-aesthetics-1/"
+          target="_blank"
+          rel="noopener noreferrer"
           className="hidden md:block bg-white text-stone-900 px-7 py-3 rounded-full hover:bg-stone-100 hover:scale-105 hover:shadow-lg transition-all duration-300 text-sm font-medium tracking-wide font-p22-mackinac"
         >
           BOOK NOW
-        </Link>
+        </a>
 
         {/* Mobile: Book Now + Hamburger */}
         <div className="flex items-center gap-4 md:hidden">
-          <Link
-            href="/booking"
+          <a
+            href="https://www.treatwell.co.uk/place/minsa-beauty-and-aesthetics-1/"
+            target="_blank"
+            rel="noopener noreferrer"
             className="bg-white text-stone-900 px-5 py-2 rounded-full hover:bg-stone-100 transition text-xs font-medium tracking-wide font-p22-mackinac"
           >
             BOOK NOW
-          </Link>
+          </a>
 
           {/* Hamburger Button */}
           <button

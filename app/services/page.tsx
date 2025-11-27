@@ -1,8 +1,14 @@
 import { Suspense } from "react";
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
+import CTASection from "@/components/CTASection";
+import FloatingWhatsApp from "@/components/FloatingWhatsApp";
 import { Outfit } from "next/font/google";
 import ServicesContent from "@/components/ServicesContent";
-import { getServicesFromSheet, groupServicesByCategory } from "@/lib/googleSheets";
+import {
+  getServicesFromSheet,
+  groupServicesByCategory,
+} from "@/lib/googleSheets";
 
 const outfit = Outfit({ subsets: ["latin"] });
 
@@ -24,32 +30,30 @@ export default async function ServicesPage() {
             Our Services & Pricing
           </h1>
           <p className="text-xl text-stone-600 max-w-2xl mx-auto">
-            Professional beauty and aesthetic treatments with transparent pricing
+            Professional beauty and aesthetic treatments with transparent
+            pricing
           </p>
         </div>
       </section>
 
-      <Suspense fallback={<div>Loading services...</div>}>
+      <Suspense
+        fallback={<div className="text-center py-12">Loading services...</div>}
+      >
         <ServicesContent servicesByCategory={servicesByCategory} />
       </Suspense>
 
       {/* CTA Section */}
-      <section className="py-16 bg-stone-800">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold mb-4 text-white">
-            Ready to Book Your Treatment?
-          </h2>
-          <p className="text-stone-300 mb-8 max-w-2xl mx-auto">
-            Contact us today to schedule your appointment or ask any questions about our services
-          </p>
-          <a
-            href="/booking"
-            className="inline-block bg-white text-stone-800 px-8 py-4 rounded-full text-lg font-semibold hover:bg-stone-100 transition"
-          >
-            Book Appointment
-          </a>
-        </div>
-      </section>
+      <CTASection
+        title="Ready to Book Your Treatment?"
+        description="Contact us today to schedule your appointment or ask any questions about our services"
+        buttonText="Book Appointment"
+      />
+
+      {/* Footer */}
+      <Footer />
+
+      {/* Floating WhatsApp Button */}
+      <FloatingWhatsApp />
     </div>
   );
 }

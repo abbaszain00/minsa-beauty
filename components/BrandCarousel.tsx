@@ -5,8 +5,8 @@ import Image from "next/image";
 export default function BrandCarousel() {
   // Array of brand logos with their paths
   const brands = [
-{ name: "Dermalogica", logo: "/assets/brands/dermalogica.png" },    
-{ name: "Mesoestetic", logo: "/assets/brands/mesoestetic.png" },
+    { name: "Dermalogica", logo: "/assets/brands/dermalogica.png" },
+    { name: "Mesoestetic", logo: "/assets/brands/mesoestetic.png" },
     { name: "Profhilo", logo: "/assets/brands/profhilo.png" },
     { name: "Nucleofill", logo: "/assets/brands/nucleofill.png" },
     { name: "Seventy Hyal", logo: "/assets/brands/seventyhyal.png" },
@@ -20,14 +20,14 @@ export default function BrandCarousel() {
 
   return (
     <section className="py-16 bg-stone-100 overflow-hidden">
-      <div className="container mx-auto px-4 mb-8">
+      {/* <div className="container mx-auto px-4 mb-8">
         <h2 className="text-3xl md:text-4xl font-bold text-center text-stone-900 mb-2">
           Premium Brands We Trust
         </h2>
         <p className="text-center text-stone-600 font-light">
           Working with industry-leading products for exceptional results
         </p>
-      </div>
+      </div> */}
 
       <div className="relative">
         {/* Gradient overlays for fade effect */}

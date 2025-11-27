@@ -1,4 +1,7 @@
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
+import CTASection from "@/components/CTASection";
+import FloatingWhatsApp from "@/components/FloatingWhatsApp";
 import { Outfit } from "next/font/google";
 import GalleryGrid from "@/components/GalleryGrid";
 
@@ -30,22 +33,17 @@ export default function GalleryPage() {
       <GalleryGrid />
 
       {/* CTA Section */}
-      <section className="py-16 bg-stone-800">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold mb-4 text-white">
-            Ready for Your Transformation?
-          </h2>
-          <p className="text-stone-300 mb-8 max-w-2xl mx-auto">
-            Book a consultation to discuss your aesthetic goals
-          </p>
-          <a
-            href="/booking"
-            className="inline-block bg-white text-stone-800 px-8 py-4 rounded-full text-lg font-semibold hover:bg-stone-100 transition"
-          >
-            Book Consultation
-          </a>
-        </div>
-      </section>
+      <CTASection
+        title="Ready for Your Transformation?"
+        description="Book a consultation to discuss your aesthetic goals"
+        buttonText="Book Consultation"
+      />
+
+      {/* Footer */}
+      <Footer />
+
+      {/* Floating WhatsApp Button */}
+      <FloatingWhatsApp />
     </div>
   );
 }
