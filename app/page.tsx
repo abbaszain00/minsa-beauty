@@ -33,14 +33,12 @@ export default function Home() {
             <h1 className="text-5xl md:text-7xl mb-6 leading-tight font-thin">
               Minsa Beauty & Aesthetics
             </h1>
-            {/* <p className="text-lg md:text-xl mb-8 text-stone-200 max-w-2xl font-light mx-auto md:mx-0">
-              Professional aesthetic treatments by certified practitioners.
-              Specializing in advanced skin treatments, anti-aging procedures,
-              and beauty therapy.
-            </p> */}
+            <p className="text-sm md:text-base mb-8 text-stone-200 max-w-2xl font-light mx-auto md:mx-0">
+              4.9★ Rating • 401 Five-Star Reviews on Treatwell
+            </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
               <a
-                href="https://www.treatwell.co.uk/place/minsa-beauty-and-aesthetics-1/"
+                href="https://www.instagram.com/minsabeautyandaesthetics/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-stone-800 text-white px-8 py-4 rounded-full text-lg hover:bg-stone-900 transition inline-block"
@@ -78,7 +76,7 @@ export default function Home() {
             <div className="group bg-stone-50 rounded-2xl overflow-hidden hover:shadow-xl transition">
               <div className="relative h-80">
                 <Image
-                  src="/assets/images/facials.jpg"
+                  src="/assets/images/botox.avif"
                   alt="Anti-Wrinkle Injections"
                   fill
                   className="object-cover group-hover:scale-105 transition duration-500"
@@ -99,7 +97,7 @@ export default function Home() {
             <div className="group bg-stone-50 rounded-2xl overflow-hidden hover:shadow-xl transition">
               <div className="relative h-80">
                 <Image
-                  src="/assets/images/treatments-1.jpg"
+                  src="/assets/images/fillers.avif"
                   alt="Dermal Fillers"
                   fill
                   className="object-cover group-hover:scale-105 transition duration-500"
@@ -120,7 +118,7 @@ export default function Home() {
             <div className="group bg-stone-50 rounded-2xl overflow-hidden hover:shadow-xl transition">
               <div className="relative h-80">
                 <Image
-                  src="/assets/images/treatments-2.jpg"
+                  src="/assets/images/meso.avif"
                   alt="Skin Boosters"
                   fill
                   className="object-cover group-hover:scale-105 transition duration-500"
@@ -141,7 +139,7 @@ export default function Home() {
             <div className="group bg-stone-50 rounded-2xl overflow-hidden hover:shadow-xl transition">
               <div className="relative h-80">
                 <Image
-                  src="/assets/images/treatments-3.jpg"
+                  src="/assets/images/microblading.avif"
                   alt="Microblading"
                   fill
                   className="object-cover group-hover:scale-105 transition duration-500"
@@ -157,23 +155,23 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Service 5 - Nucleofill */}
+            {/* Service 5 - Facials */}
             <div className="group bg-stone-50 rounded-2xl overflow-hidden hover:shadow-xl transition">
               <div className="relative h-80">
                 <Image
-                  src="/assets/images/treatments-4.jpg"
-                  alt="Nucleofill Treatment"
+                  src="/assets/images/facials.jpg"
+                  alt="Facial Treatments"
                   fill
                   className="object-cover group-hover:scale-105 transition duration-500"
                 />
               </div>
               <div className="p-6">
                 <h3 className="text-2xl font-bold mb-3 text-stone-900">
-                  Nucleofill
+                  Facials
                 </h3>
                 <p className="text-stone-600 font-light">
-                  Advanced polynucleotide bio-revitalization for skin
-                  regeneration.
+                  Advanced Facial Treatments designed to restore radiance and
+                  promote long-lasting skin health.
                 </p>
               </div>
             </div>
@@ -182,7 +180,7 @@ export default function Home() {
             <div className="group bg-stone-50 rounded-2xl overflow-hidden hover:shadow-xl transition">
               <div className="relative h-80">
                 <Image
-                  src="/assets/images/treatments-5.jpg"
+                  src="/assets/images/manicure.avif"
                   alt="Gel Manicures"
                   fill
                   className="object-cover group-hover:scale-105 transition duration-500"
@@ -301,7 +299,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <BrandCarousel />
 
       {/* Location Section */}
       <section className="py-24 bg-stone-50">
@@ -333,6 +330,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <BrandCarousel />
 
       <CTASection
         title="Transform Your Look Today"

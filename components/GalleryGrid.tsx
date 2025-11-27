@@ -8,127 +8,76 @@ interface GalleryItem {
   title: string;
   category: string;
   imageUrl: string;
-  beforeUrl?: string;
-  afterUrl?: string;
-  description?: string;
 }
 
 export default function GalleryGrid() {
-  const categories = [
-    "All",
-    "Anti-Wrinkle",
-    "Dermal Fillers",
-    "Skin Boosters",
-    "Microblading",
-    "Facials",
-    "Nails",
-  ];
-
-  const [activeCategory, setActiveCategory] = useState("All");
   const [selectedImage, setSelectedImage] = useState<GalleryItem | null>(null);
 
   // Sample gallery data - you'll replace these with real images
   const galleryItems: GalleryItem[] = [
     {
       id: 1,
-      title: "Lip Filler Transformation",
-      category: "Dermal Fillers",
-      imageUrl: "/assets/images/facials.jpg",
-      beforeUrl: "/assets/images/facials.jpg",
-      afterUrl: "/assets/images/about-image.jpg",
-      description: "1ml lip augmentation with natural results",
+      title: "Microblading Transformation",
+      category: "Microblading",
+      imageUrl: "/assets/images/micro-1.webp",
     },
     {
       id: 2,
       title: "Anti-Wrinkle Results",
-      category: "Anti-Wrinkle",
-      imageUrl: "/assets/images/oil-massage.jpg",
-      description: "Forehead lines treated with Botox",
+      category: "Anti-Wrinkle Injections",
+      imageUrl: "/assets/images/botox-1.webp",
     },
     {
       id: 3,
-      title: "Skin Booster Glow",
-      category: "Skin Boosters",
-      imageUrl: "/assets/images/reflexology.jpg",
-      description: "Profhilo treatment for enhanced hydration",
+      title: "Soak Off & Gel Manicure",
+      category: "Nails",
+      imageUrl: "/assets/images/nails-1.webp",
     },
     {
       id: 4,
-      title: "Microblading Brows",
-      category: "Microblading",
-      imageUrl: "/assets/images/about-image.jpg",
-      beforeUrl: "/assets/images/facials.jpg",
-      afterUrl: "/assets/images/about-image.jpg",
-      description: "Natural-looking eyebrow enhancement",
+      title: "Dermal Filler Look",
+      category: "Dermal Fillers",
+      imageUrl: "/assets/images/dermal-1.webp",
     },
     {
       id: 5,
-      title: "Cheek Filler Contour",
-      category: "Dermal Fillers",
-      imageUrl: "/assets/images/facials.jpg",
-      description: "2ml cheek augmentation for definition",
+      title: "Defined Eyebrow Threading",
+      category: "Eyebrows",
+      imageUrl: "/assets/images/thread-1.webp",
     },
     {
       id: 6,
-      title: "CACI Facial Results",
-      category: "Facials",
-      imageUrl: "/assets/images/oil-massage.jpg",
-      description: "Non-surgical facelift treatment",
+      title: "Lash Lift & Tint",
+      category: "Lashes",
+      imageUrl: "/assets/images/lash-1.webp",
     },
     {
       id: 7,
-      title: "Gel Manicure Art",
-      category: "Nails",
-      imageUrl: "/assets/images/reflexology.jpg",
-      description: "French gel manicure",
+      title: "Henna Brows",
+      category: "Eyebrows",
+      imageUrl: "/assets/images/henna-1.webp",
     },
     {
       id: 8,
-      title: "Bunny Lines Treatment",
-      category: "Anti-Wrinkle",
-      imageUrl: "/assets/images/about-image.jpg",
-      description: "Subtle nose line smoothing",
+      title: "French Gel Manicure",
+      category: "Nails",
+      imageUrl: "/assets/images/nails-2.webp",
     },
     {
       id: 9,
-      title: "Chin Contouring",
-      category: "Dermal Fillers",
-      imageUrl: "/assets/images/facials.jpg",
-      beforeUrl: "/assets/images/facials.jpg",
-      afterUrl: "/assets/images/about-image.jpg",
-      description: "1ml chin augmentation",
+      title: "Brow Lamination, Tint & Shape",
+      category: "Eyebrows",
+      imageUrl: "/assets/images/brows-1.webp",
     },
   ];
-
-  const filteredItems =
-    activeCategory === "All"
-      ? galleryItems
-      : galleryItems.filter((item) => item.category === activeCategory);
 
   return (
     <>
       <section className="py-12">
         <div className="container mx-auto px-4">
-          {/* Category Filter */}
-          <div className="flex flex-wrap justify-center gap-3 mb-12">
-            {categories.map((category) => (
-              <button
-                key={category}
-                onClick={() => setActiveCategory(category)}
-                className={`px-6 py-2.5 rounded-full text-sm font-semibold transition ${
-                  activeCategory === category
-                    ? "bg-stone-800 text-white"
-                    : "bg-white text-stone-700 hover:bg-stone-100"
-                }`}
-              >
-                {category}
-              </button>
-            ))}
-          </div>
-
           {/* Gallery Grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {filteredItems.map((item) => (
+            {galleryItems.map((item) => (
               <div
                 key={item.id}
                 onClick={() => setSelectedImage(item)}
@@ -149,81 +98,43 @@ export default function GalleryGrid() {
               </div>
             ))}
           </div>
-
-          {/* Empty State */}
-          {filteredItems.length === 0 && (
-            <div className="text-center py-20">
-              <p className="text-stone-600 text-lg">
-                No images found in this category yet.
-              </p>
-            </div>
-          )}
         </div>
       </section>
 
-      {/* Lightbox Modal */}
+      {/* Lightbox Modal - Full Screen Image Only */}
       {selectedImage && (
         <div
-          className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4"
+          className="fixed inset-0 bg-black/95 z-50 flex items-center justify-center p-4"
           onClick={() => setSelectedImage(null)}
         >
-          <div
-            className="relative max-w-5xl w-full bg-white rounded-2xl overflow-hidden"
-            onClick={(e) => e.stopPropagation()}
+          {/* Close Button */}
+          <button
+            onClick={() => setSelectedImage(null)}
+            className="absolute top-4 right-4 z-10 bg-white/10 hover:bg-white/20 text-white rounded-full p-3 transition"
           >
-            {/* Close Button */}
-            <button
-              onClick={() => setSelectedImage(null)}
-              className="absolute top-4 right-4 z-10 bg-white/90 hover:bg-white text-stone-800 rounded-full p-3 transition"
+            <svg
+              className="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
             >
-              <svg
-                className="w-6 h-6"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M6 18L18 6M6 6l12 12"
-                />
-              </svg>
-            </button>
-
-            {/* Image */}
-            <div className="relative aspect-video w-full bg-stone-100">
-              <Image
-                src={selectedImage.imageUrl}
-                alt={selectedImage.title}
-                fill
-                className="object-contain"
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M6 18L18 6M6 6l12 12"
               />
-            </div>
+            </svg>
+          </button>
 
-            {/* Details */}
-            <div className="p-8">
-              <span className="inline-block px-3 py-1 bg-stone-100 text-stone-700 rounded-full text-sm font-medium mb-3">
-                {selectedImage.category}
-              </span>
-              <h2 className="text-3xl font-bold mb-3 text-stone-900">
-                {selectedImage.title}
-              </h2>
-              {selectedImage.description && (
-                <p className="text-stone-600 text-lg">
-                  {selectedImage.description}
-                </p>
-              )}
-
-              {/* Before/After indicator */}
-              {selectedImage.beforeUrl && selectedImage.afterUrl && (
-                <div className="mt-6 p-4 bg-stone-50 rounded-xl">
-                  <p className="text-sm text-stone-600 font-medium">
-                    ✨ This image shows before/after transformation
-                  </p>
-                </div>
-              )}
-            </div>
+          {/* Full Screen Image */}
+          <div className="relative w-full h-full max-w-7xl max-h-[90vh]">
+            <Image
+              src={selectedImage.imageUrl}
+              alt={selectedImage.title}
+              fill
+              className="object-contain"
+            />
           </div>
         </div>
       )}
