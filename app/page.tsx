@@ -88,13 +88,10 @@ export default function Home() {
                 <h3 className="text-2xl font-bold mb-3 text-stone-900">
                   Anti-Wrinkle Injections
                 </h3>
-                <p className="text-stone-600 mb-4 font-light">
+                <p className="text-stone-600 font-light">
                   Botox and anti-wrinkle treatments to smooth fine lines and
                   prevent aging signs.
                 </p>
-                <button className="text-stone-800 font-medium hover:text-stone-600 transition">
-                  Learn More →
-                </button>
               </div>
             </div>
 
@@ -112,13 +109,10 @@ export default function Home() {
                 <h3 className="text-2xl font-bold mb-3 text-stone-900">
                   Dermal Fillers
                 </h3>
-                <p className="text-stone-600 mb-4 font-light">
+                <p className="text-stone-600 font-light">
                   Premium fillers including Profhilo, Seventy Hyal for natural
                   volume and hydration.
                 </p>
-                <button className="text-stone-800 font-medium hover:text-stone-600 transition">
-                  Learn More →
-                </button>
               </div>
             </div>
 
@@ -136,13 +130,10 @@ export default function Home() {
                 <h3 className="text-2xl font-bold mb-3 text-stone-900">
                   Skin Boosters
                 </h3>
-                <p className="text-stone-600 mb-4 font-light">
+                <p className="text-stone-600 font-light">
                   Lumi Eyes, PRP, and mesotherapy for deep hydration and radiant
                   skin.
                 </p>
-                <button className="text-stone-800 font-medium hover:text-stone-600 transition">
-                  Learn More →
-                </button>
               </div>
             </div>
 
@@ -160,12 +151,9 @@ export default function Home() {
                 <h3 className="text-2xl font-bold mb-3 text-stone-900">
                   Microblading
                 </h3>
-                <p className="text-stone-600 mb-4 font-light">
+                <p className="text-stone-600 font-light">
                   Semi-permanent eyebrow enhancement for natural, defined brows.
                 </p>
-                <button className="text-stone-800 font-medium hover:text-stone-600 transition">
-                  Learn More →
-                </button>
               </div>
             </div>
 
@@ -183,13 +171,10 @@ export default function Home() {
                 <h3 className="text-2xl font-bold mb-3 text-stone-900">
                   Nucleofill
                 </h3>
-                <p className="text-stone-600 mb-4 font-light">
+                <p className="text-stone-600 font-light">
                   Advanced polynucleotide bio-revitalization for skin
                   regeneration.
                 </p>
-                <button className="text-stone-800 font-medium hover:text-stone-600 transition">
-                  Learn More →
-                </button>
               </div>
             </div>
 
@@ -207,13 +192,10 @@ export default function Home() {
                 <h3 className="text-2xl font-bold mb-3 text-stone-900">
                   Gel Manicures
                 </h3>
-                <p className="text-stone-600 mb-4 font-light">
+                <p className="text-stone-600 font-light">
                   Long-lasting, chip-free gel manicures in a relaxing
                   environment.
                 </p>
-                <button className="text-stone-800 font-medium hover:text-stone-600 transition">
-                  Learn More →
-                </button>
               </div>
             </div>
           </div>
