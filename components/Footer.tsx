@@ -22,9 +22,9 @@ export default function Footer() {
           <div>
             <h3 className="text-xl font-bold mb-4">Location</h3>
             <p className="text-stone-400 font-light">
-              35 New Broad Street
+              3rd Floor, 10 Devonshire Row
               <br />
-              London, EC2M 1NH
+              EC2M 4RH
               <br />
               United Kingdom
             </p>

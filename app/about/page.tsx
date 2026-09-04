@@ -54,13 +54,13 @@ export default function About() {
               </p>
 
               <p className="text-lg md:text-xl text-stone-700 mb-6 font-light leading-relaxed">
-                Located at 35 New Broad Street, just moments from Liverpool
-                Street station, our clinic provides a tranquil escape from the
-                bustling City of London. We&apos;ve created a sophisticated
-                sanctuary where busy professionals can unwind and invest in
-                themselves, whether that&apos;s through a precision microblading
-                session, rejuvenating skin treatment, or a perfectly executed
-                gel manicure.
+                Located at 3rd Floor, 10 Devonshire Row, just moments from
+                Liverpool Street station, our clinic provides a tranquil escape
+                from the bustling City of London. We&apos;ve created a
+                sophisticated sanctuary where busy professionals can unwind and
+                invest in themselves, whether that&apos;s through a precision
+                microblading session, rejuvenating skin treatment, or a
+                perfectly executed gel manicure.
               </p>
 
               <p className="text-lg md:text-xl text-stone-700 font-light leading-relaxed">
