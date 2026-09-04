@@ -276,7 +276,7 @@ export default function Home() {
           {/* Google Reviews CTA */}
           <div className="text-center mt-12">
             <a
-              href="https://www.google.com/maps/search/Minsa+Beauty+%26+Aesthetics+35+New+Broad+Street+London"
+              href="https://www.google.com/maps/search/Minsa+Beauty+%26+Aesthetics+10+Devonshire+Row+London"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center text-stone-800 font-semibold hover:text-stone-600 transition"
@@ -312,7 +312,7 @@ export default function Home() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="https://www.google.com/maps/dir/?api=1&destination=35+New+Broad+Street,+London,+EC2M+1NH"
+              href="https://www.google.com/maps/dir/?api=1&destination=10+Devonshire+Row,+London,+EC2M+4RH"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-stone-800 text-white px-8 py-4 rounded-full text-lg hover:bg-stone-900 transition"
