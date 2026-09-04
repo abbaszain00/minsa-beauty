@@ -308,7 +308,7 @@ export default function Home() {
             Our Location
           </h2>
           <p className="text-xl md:text-2xl text-stone-700 mb-8 font-light">
-            35 New Broad Street, London, EC2M 1NH
+            3rd Floor, 10 Devonshire Row, London EC2M 4RH
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
